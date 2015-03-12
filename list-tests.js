@@ -5,6 +5,17 @@ QUnit.test("A new list is empty", function (assert) {
   assert.equal(l.head(), null)
 });
 
+QUnit.test("It is really a list", function (assert) {
+  var l = new List()
+  l.add("a")
+  l.add("b")
+  l.add("c")
+  assert.equal(l.item.data, "c")
+  assert.equal(l.item.tail.data, "b")
+  assert.equal(l.item.tail.tail.data, "a")
+  assert.equal(l.item.tail.tail.tail, null)
+});
+
 QUnit.test("Head of the list contains most recent addition", function (assert) {
   var l = new List()
   l.add("a")
