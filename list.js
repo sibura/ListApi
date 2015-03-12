@@ -12,7 +12,7 @@ var List = function() {
 
   // Add a data item to the front of the list
   this.add = function(elem) {
-    this.item = new Item(elem, this.item)
+    //this.item = new Item(elem, this.item)
   }
 
   // Returns true if the list is empty
