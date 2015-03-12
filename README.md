@@ -19,7 +19,9 @@ allows basic manipulation of a singly linked list. For example:
 
 ```javascript
   var l = new List()
-  l.add("a").add("b").add("c")
+  l.add("a")
+  l.add("b")
+  l.add("c")
   var d = l.pop()              // d === "c"
   var h = l.head()             // h === "b"
   var len = list.length()      // len === 2
