@@ -1,7 +1,7 @@
 
 // An object to hold the item we will be
 // storing in our list
-var Item = function(data, tail) {
+var ListItem = function(data, tail) {
   this.tail = tail
   this.data = data
 }
@@ -12,7 +12,7 @@ var List = function() {
 
   // Add a data item to the front of the list
   this.add = function(elem) {
-    //this.item = new Item(elem, this.item)
+    //this.item = new ListItem(elem, this.item)
   }
 
   // Returns true if the list is empty
