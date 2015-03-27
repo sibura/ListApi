@@ -1,4 +1,3 @@
-
 QUnit.test("A new list is empty", function (assert) {
 	var l = new List()
   assert.equal(l.empty(), true)
@@ -40,6 +39,16 @@ QUnit.test("Returns the correct length of a list", function (assert) {
   l.pop()
   l.pop()
   assert,equal(l.length(),0)
+});
+
+QUnit.test("Returns the correct length of a list no pop", function (assert) {
+  var l = new List()
+  assert.equal(l.length(), 0)
+  l.add("a")
+  l.add("b")
+  l.add("c")
+  assert,equal(l.length(),3)
+  
 });
 
 
